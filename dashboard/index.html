@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NetSentinel Dashboard</title>
+</head>
+<body>
+<h1>NetSentinel Real-Time Threat Monitor</h1>
+
+<div id="threats"></div>
+
+<script>
+async function fetchThreats() {
+    const res = await fetch("http://localhost:8000/threats");
+    const data = await res.json();
+    
+    document.getElementById("threats").innerHTML =
+        JSON.stringify(data, null, 2);
+}
+
+setInterval(fetchThreats, 5000);
+</script>
+</body>
+</html>
