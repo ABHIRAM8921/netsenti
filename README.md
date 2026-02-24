@@ -1,5 +1,4 @@
 
-
 # NetSentinel 🚨
 Real-Time Behavioral Network Intrusion Detection System  
 Designed for small institutions and lab environments.
@@ -280,4 +279,4 @@ Ensure correct network interface is set in node.cfg.
 NetSentinel
 Real-Time Behavioral IDS
 Designed for academic and research environments.
-
+..
